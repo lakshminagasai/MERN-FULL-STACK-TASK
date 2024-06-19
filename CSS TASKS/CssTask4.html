@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Task 4</title>
+    <style>
+    .hover-container{
+        height: 100vh;
+        border: 2px solid black;
+        display: flex;
+    }
+    #hover-nav a {
+        position: relative;
+        left: -80px;
+        transition: 0.3s;
+        padding: 8px;
+        height: 40px;
+        width: 150px;
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+        border-radius: 0 5px 5px 0;
+        display: flex;
+        margin-bottom: 20px;
+        margin-top: 24px;
+        flex-direction: column;
+    }
+    #hover-nav a:hover {
+        left: 0;
+        cursor: pointer;
+    }
+    
+    #home {
+        top: 20px;
+        background-color: #04AA6D;
+    }
+    
+    #about {
+        top: 20px;
+        background-color: #2196F3;
+    }
+    
+    #projects {
+        top: 30px;
+        background-color: #f44336;
+    }
+    
+    #contact {
+        top: 20px;
+        background-color: #555
+    }
+    </style>
+</head>
+<body>
+    <div class="hover-container">
+        <div  id="hover-nav" class="hover-boxes">
+            <a href="#home" id="home">Home</a>
+            <a href="#about" id="about">About </a>
+            <a href="#projects" id="projects">Projects</a>
+            <a href="#contact" id="contact">Contact</a>
+            </div>
+            <div style="margin-left: 80px;"> 
+            <h1 class="hover-heading">Hoverable Sidenav Buttons</h1>
+            <p class="hover-para">Hover over the buttons in the left side navigation to open them.</p>  
+            </div>
+      </div>
+</body>
+</html>

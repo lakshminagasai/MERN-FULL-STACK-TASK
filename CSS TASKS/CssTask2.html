@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Task 2</title>
+    <style>
+    .navbar-box{
+        display: flex;
+    }
+    .vertical-container{
+        padding: 16px 10px 0px 8px;
+        border: 2px solid black;
+        width: 240px;
+        margin: 20px;
+    }
+    .vertical-box{
+        margin-right: 30px;
+    }
+    .box{
+        color: blue;
+        padding: 16px;
+        font-size: 21px;
+        font-weight: bold;
+        background-color: lightskyblue;
+    }
+    .box:hover{
+        color: white;
+        background-color: orange;
+        cursor: pointer;
+    }
+    .navbar-heading{
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .horizontal-container{
+        padding: 10px 0px 8px 5px;
+        border:2px solid black ;
+        display: flex;
+    }
+    .horizontal-navbar{
+        display: flexbox;
+        align-self: center;
+    }
+    .horizontal-box{
+        color: blue;
+        width: 60px;
+        border-right:2px solid blue ;
+        background-color: #c5c6d0;
+        font-size: 21px;
+        padding: 10px;
+    }
+    .horizontal-box:hover{
+        color: white;
+        background-color:#808080;
+        cursor: pointer;
+    }
+    </style>
+</head>
+<body>
+    <div class="navbar-box">
+        <div class="vertical-box">
+            <h1 class="navbar-heading">Vertical Navigation Bar</h1>
+            <div class="vertical-container">
+                <div class="box">Home</div>
+                <div class="box">Java</div>
+                <div class="box">CSS</div>
+                <div class="box">HTML</div>
+                <div class="box">Bootstrap</div>
+            </div>
+        </div>
+       <div class="horizontal-navbar">
+        <h1 class="navbar-heading">Horizontal Navigation Bar</h1>
+        <div class="horizontal-container">
+            <div class="horizontal-box">Home</div>
+            <div class="horizontal-box">Java</div>
+            <div class="horizontal-box">HTML</div>
+            <div class="horizontal-box">CSS</div>
+            <div class="horizontal-box" style="border: 0px;"></div>
+        </div>
+       </div>
+       </div>
+</body>
+</html>

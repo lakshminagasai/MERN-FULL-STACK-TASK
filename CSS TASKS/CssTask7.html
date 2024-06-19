@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Task 7</title>
+    <style>
+        body{
+            color: white;
+            background-color: #f1335d;
+        }
+        .form-container{
+            background-color: #800020;
+            width: 750px;
+            margin-top: 32px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 20px 60px 60px 100px;
+        }
+        .input-box{
+            color: grey;
+            padding: 6px;
+            width: 250px;
+            margin: 5px;
+            border-radius: 1px;
+            border: 0px;
+        }
+        .gender{
+            height: 32px;
+        }
+       .g{
+        height: 14px;
+       }
+        label{
+            font-family:Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            font-weight: 500;
+        }
+        #lang{
+            margin:10px 10px 5px 5px;
+            width: 160px;
+            padding: 5px;
+            color: black;
+            font-size: 16px;
+            font-weight: 600;
+            background-color:azure;
+        }
+        #about{
+            margin-top: 10px;
+            margin-left: 5px;
+            padding: 5px;
+        }
+        .but{
+            width: 500px;
+            background-color: white;
+            text-align: center;
+            border-radius: 6px;
+            margin-top: 12px;
+        }
+        button{ 
+            color: black;
+            font-size: 18px;
+            font-weight: 700;
+            font-family: Arial, Helvetica, sans-serif;
+            border-radius: 6px;
+            border: 0px;
+        }
+        </style>
+</head>
+<body>
+    <form class="form-container" action="">
+        <table>
+            <tr>
+                <td ><label for="name">Name:</label></td>
+                <td><input class="input-box"  id="name" placeholder="your name" type="text"/></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input class="input-box"  id="email" placeholder="your email" type="email"/></td>
+            </tr>
+            <tr>
+                <td><label for="pass">Password:</label></td>
+                <td><input class="input-box"  id="pass" placeholder="" type="password"/></td>
+            </tr>
+            <tr>
+                <td><label for="ph">Phone Number:</label></td>
+                <td><input class="input-box"  id="ph" placeholder=" " type="number"/></td>
+            </tr>
+            <tr>
+                <td><label for="gen">Gender:</label></td>
+                <td><label class="gender">Male: <input class="g"  id="gen1" placeholder=" " type="radio"/></label>
+                    <label class="gender">Female: <input class="g"  id="gen2" placeholder=" " type="radio"/></label>
+                    <label class="gender">Other: <input class="g"  id="gen3" placeholder=" " type="radio"/></label></td>
+            </tr>
+            <tr>
+                <td><label for="lang">Language:</label></td>
+                <td><select name="Languages" id="lang" >
+                    <option value="Select language ">Select language  </option>
+                    <option value="Telugu">Telugu</option>
+                    <option value="English">English</option>
+                    <option value="Hindi">Hindi</option>
+                    <option value="French">French</option>
+                    <option value="Tamil">Tamil</option>
+                    <option value="Marathi">Marathi</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><label for="code">Zip Code:</label></td>
+                <td><input class="input-box"  id="code" placeholder="" type="text"/></td>
+            </tr>
+            <tr>
+                <td><label for="about">About:</label></td>
+                <td><textarea id="about" cols="36"  rows="3" placeholder="Write about yourself...."></textarea></td>
+            </tr>
+        </table>
+        <div class="but"><button style="background-color: white;  width: 100%;padding: 8px;">Register</button></div>
+    </form>
+</body>
+</html>
